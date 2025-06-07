@@ -1,0 +1,95 @@
+/* .body {
+  padding-top: 90px;
+}
+.main {
+  margin-top: 70px;
+} */
+
+.navbar {
+  z-index: 1050;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-link {
+  transition: background 0.3s, padding-left 0.3s;
+  border-radius: 5px;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-left: 12px;
+  text-decoration: none;
+}
+
+.contact-section {
+  background-color: #ffffff;
+  /* page stays white */
+  padding: 60px 0;
+}
+
+.contact-card {
+  background-color: #343a40;
+  /* dark grey */
+  border-radius: 10px;
+  padding: 40px;
+  color: #ffffff;
+  /* white text */
+}
+
+.contact-card .form-label,
+.contact-card input,
+.contact-card textarea {
+  color: #ffffff;
+}
+
+.contact-card input,
+.contact-card textarea {
+  background-color: #495057;
+  border: none;
+}
+
+.contact-card input::placeholder,
+.contact-card textarea::placeholder {
+  color: #ced4da;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  background-color: #495057;
+  color: #ffffff;
+  box-shadow: none;
+  border: 1px solid #0d6efd;
+}
+
+.contact-heading {
+  color: #0d6efd;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 2px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #0dcaf0;
+  /* Bootstrap's info color */
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom: 2px solid #0dcaf0;
+}
