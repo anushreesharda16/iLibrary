@@ -2,10 +2,6 @@
 <?php include 'includes/head.php'; ?>
 <?php include 'includes/navbar.php'; ?>
 
-<style>
-    
-</style>
-
 <main class="container py-5">
 
     <!-- Intro Section -->
