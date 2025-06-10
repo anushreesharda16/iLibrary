@@ -3,80 +3,7 @@
 <?php include 'includes/navbar.php'; ?>
 
 <style>
-    /* Minimal custom styles */
-    .intro-section {
-        padding: 3rem 1rem;
-        text-align: center;
-        max-width: 700px;
-        margin: 0 auto 3rem auto;
-    }
-
-    .btn-browse {
-        background-color: #007bff;
-        color: white;
-        padding: 0.75rem 2rem;
-        border-radius: 30px;
-        font-weight: 500;
-        transition: background-color 0.3s ease;
-        box-shadow: 0 4px 10px rgb(0 123 255 / 0.3);
-    }
-
-    .btn-browse:hover {
-        background-color: #0056b3;
-        box-shadow: 0 6px 15px rgb(0 86 179 / 0.5);
-        color: white;
-    }
-
-    .cta-section {
-        text-align: center;
-        margin-bottom: 3rem;
-    }
-
-    .btn-outline-custom {
-        border-color: #007bff;
-        color: #007bff;
-        font-weight: 500;
-        border-radius: 30px;
-        padding: 0.6rem 1.5rem;
-        margin: 0 0.4rem;
-        transition: all 0.3s ease;
-    }
-
-    .btn-outline-custom:hover {
-        background-color: #007bff;
-        color: white;
-    }
-
-    /* Carousel card styles */
-    .category-card {
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        background: #fff;
-        transition: transform 0.3s ease;
-    }
-
-    .category-card:hover {
-        transform: scale(1.05);
-    }
-
-    .category-card img {
-        width: 100%;
-        height: 180px;
-        object-fit: contain; 
-        background-color: #f8f9fa;
-    }
-
-    .category-card-body {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: #007bff;
-        border-radius: 50%;
-    }
+    
 </style>
 
 <main class="container py-5">
@@ -128,7 +55,7 @@
                                 <img src="assets/images/SH1.jpeg" alt="Self Help">
                                 <div class="category-card-body">
                                     <h5>Self-Help</h5>
-                                    <p>Dive into the past with rich historic</p>
+                                    <p>Books to unleash your inner strength.</p>
                                 </div>
                             </div>
                         </div>
@@ -162,8 +89,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Add more categories here -->
 
             </div>
 

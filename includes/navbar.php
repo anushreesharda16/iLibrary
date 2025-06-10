@@ -16,9 +16,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
 
         <?php if (!isset($_SESSION['user'])): ?>
           <?php if ($currentPage === 'index.php'): ?>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="<?= base_url ?>index.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/contactUs.php"><i class="bi bi-envelope-fill me-2"></i>Contact Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/auth/login.php">Login</a></li>
+            <li class="nav-item me-2"><a class="nav-link active" aria-current="page" href="<?= base_url ?>index.php">Home</a></li>
+            <li class="nav-item me-2"><a class="nav-link" href="<?= base_url ?>views/contactUs.php"><i class="bi bi-envelope-fill me-2"></i>Contact Us</a></li>
+            <li class="nav-item me-2"><a class="nav-link" href="<?= base_url ?>views/auth/login.php">Login</a></li>
             <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/auth/register.php"><button class="btn btn-outline-info btn-sm"> Register </button></a></li>
           <?php elseif ($currentPage === 'contactUs.php'): ?>
             <li class="nav-item"><a class="nav-link" href="<?= base_url ?>index.php">Home</a></li>
@@ -28,9 +28,9 @@ $currentPage = basename($_SERVER['PHP_SELF']);
         <?php else: ?>
           <?php if ($_SESSION['user']['role'] === 'member'): ?>
             <?php if ($currentPage === 'dashboard.php' || $currentPage === 'listIssuedBooks.php'): ?>
-              <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/member/dashboard.php">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/contactUs.php"><i class="bi bi-envelope-fill me-2"></i>Contact Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/auth/logout.php"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
+              <li class="nav-item me-2"><a class="nav-link" href="<?= base_url ?>views/member/dashboard.php">Home</a></li>
+              <li class="nav-item me-2"><a class="nav-link" href="<?= base_url ?>views/contactUs.php"><i class="bi bi-envelope-fill me-2"></i>Contact Us</a></li>
+              <li class="nav-item me-2"><a class="nav-link" href="<?= base_url ?>views/auth/logout.php"><i class="bi bi-box-arrow-right me-2"></i>Logout</a></li>
             <?php elseif ($currentPage === 'contactUs.php'): ?>
               <li class="nav-item"><a class="nav-link" href="<?= base_url ?>views/member/dashboard.php">Home</a></li>
             <?php endif; ?>
